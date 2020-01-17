@@ -1,0 +1,975 @@
+This file contains any messages produced by compilers while
+running configure, to aid debugging if configure makes a mistake.
+
+configure:686: checking for gcc
+configure:799: checking whether the C compiler (gcc  ) works
+configure:815: gcc -o conftest    conftest.c  1>&5
+configure:812:1: warning: return type defaults to 'int' [-Wimplicit-int]
+ main(){return(0);}
+ ^~~~
+configure:841: checking whether the C compiler (gcc  ) is a cross-compiler
+configure:846: checking whether we are using GNU C
+configure:874: checking whether gcc accepts -g
+configure:907: checking whether gcc and cc understand -c and -o together
+configure:922: gcc -c conftest.c -o conftest.o 1>&5
+conftest.c:1:1: warning: return type defaults to 'int' [-Wimplicit-int]
+ foo(){}
+ ^~~
+configure:923: gcc -c conftest.c -o conftest.o 1>&5
+conftest.c:1:1: warning: return type defaults to 'int' [-Wimplicit-int]
+ foo(){}
+ ^~~
+configure:928: cc -c conftest.c 1>&5
+conftest.c:1:1: warning: return type defaults to 'int' [-Wimplicit-int]
+ foo(){}
+ ^~~
+configure:930: cc -c conftest.c -o conftest.o 1>&5
+conftest.c:1:1: warning: return type defaults to 'int' [-Wimplicit-int]
+ foo(){}
+ ^~~
+configure:931: cc -c conftest.c -o conftest.o 1>&5
+conftest.c:1:1: warning: return type defaults to 'int' [-Wimplicit-int]
+ foo(){}
+ ^~~
+configure:967: checking how to run the C preprocessor
+configure:1047: checking for inline
+configure:1061: gcc -c -g -O2  conftest.c 1>&5
+configure:1057:10: warning: return type defaults to 'int' [-Wimplicit-int]
+ } $ac_kw foo() {
+          ^~~
+configure:1089: checking size of short
+configure:1105: gcc -c -g -O2  conftest.c 1>&5
+configure: In function 'main':
+configure:1101:20: error: duplicate case value
+ switch (0) case 0: case (sizeof (short) == $ac_size):;
+                    ^~~~
+configure:1101:12: note: previously used here
+ switch (0) case 0: case (sizeof (short) == $ac_size):;
+            ^~~~
+configure: failed program was:
+#line 1095 "configure"
+#include "confdefs.h"
+#include "confdefs.h"
+#include <sys/types.h>
+
+
+int main() {
+switch (0) case 0: case (sizeof (short) == 4):;
+; return 0; }
+configure:1105: gcc -c -g -O2  conftest.c 1>&5
+configure: In function 'main':
+configure:1101:20: error: duplicate case value
+ switch (0) case 0: case (sizeof (short) == $ac_size):;
+                    ^~~~
+configure:1101:12: note: previously used here
+ switch (0) case 0: case (sizeof (short) == $ac_size):;
+            ^~~~
+configure: failed program was:
+#line 1095 "configure"
+#include "confdefs.h"
+#include "confdefs.h"
+#include <sys/types.h>
+
+
+int main() {
+switch (0) case 0: case (sizeof (short) == 8):;
+; return 0; }
+configure:1105: gcc -c -g -O2  conftest.c 1>&5
+configure: In function 'main':
+configure:1101:20: error: duplicate case value
+ switch (0) case 0: case (sizeof (short) == $ac_size):;
+                    ^~~~
+configure:1101:12: note: previously used here
+ switch (0) case 0: case (sizeof (short) == $ac_size):;
+            ^~~~
+configure: failed program was:
+#line 1095 "configure"
+#include "confdefs.h"
+#include "confdefs.h"
+#include <sys/types.h>
+
+
+int main() {
+switch (0) case 0: case (sizeof (short) == 1):;
+; return 0; }
+configure:1105: gcc -c -g -O2  conftest.c 1>&5
+configure:1128: checking size of int
+configure:1144: gcc -c -g -O2  conftest.c 1>&5
+configure:1167: checking size of long
+configure:1183: gcc -c -g -O2  conftest.c 1>&5
+configure: In function 'main':
+configure:1179:20: error: duplicate case value
+ switch (0) case 0: case (sizeof (long) == $ac_size):;
+                    ^~~~
+configure:1179:12: note: previously used here
+ switch (0) case 0: case (sizeof (long) == $ac_size):;
+            ^~~~
+configure: failed program was:
+#line 1173 "configure"
+#include "confdefs.h"
+#include "confdefs.h"
+#include <sys/types.h>
+
+
+int main() {
+switch (0) case 0: case (sizeof (long) == 4):;
+; return 0; }
+configure:1183: gcc -c -g -O2  conftest.c 1>&5
+configure:1207: checking execution character set
+configure:1268: checking whether make sets ${MAKE}
+configure:1296: checking whether a default assembler was specified
+configure:1308: checking whether a default linker was specified
+configure:1320: checking for GNU C library
+configure:1335: gcc -c -g -O2  conftest.c 1>&5
+configure:1357: checking whether ln works
+configure:1389: checking whether ln -s works
+configure:1423: checking for ranlib
+configure:1480: checking for a BSD compatible install
+configure:1531: checking for ANSI C header files
+configure:1635: checking whether time.h and sys/time.h may both be included
+configure:1649: gcc -c -g -O2  conftest.c 1>&5
+configure:1670: checking whether string.h and strings.h may both be included
+configure:1683: gcc -c -g -O2  conftest.c 1>&5
+configure:1704: checking for sys/wait.h that is POSIX.1 compatible
+configure:1725: gcc -c -g -O2  conftest.c 1>&5
+configure:1752: checking for limits.h
+configure:1762: gcc -E  conftest.c >/dev/null 2>conftest.out
+configure:1752: checking for stddef.h
+configure:1762: gcc -E  conftest.c >/dev/null 2>conftest.out
+configure:1752: checking for string.h
+configure:1762: gcc -E  conftest.c >/dev/null 2>conftest.out
+configure:1752: checking for strings.h
+configure:1762: gcc -E  conftest.c >/dev/null 2>conftest.out
+configure:1752: checking for stdlib.h
+configure:1762: gcc -E  conftest.c >/dev/null 2>conftest.out
+configure:1752: checking for time.h
+configure:1762: gcc -E  conftest.c >/dev/null 2>conftest.out
+configure:1752: checking for fcntl.h
+configure:1762: gcc -E  conftest.c >/dev/null 2>conftest.out
+configure:1752: checking for unistd.h
+configure:1752: checking for sys/file.h
+configure:1762: gcc -E  conftest.c >/dev/null 2>conftest.out
+configure:1752: checking for sys/time.h
+configure:1762: gcc -E  conftest.c >/dev/null 2>conftest.out
+configure:1752: checking for sys/resource.h
+configure:1762: gcc -E  conftest.c >/dev/null 2>conftest.out
+configure:1752: checking for sys/param.h
+configure:1762: gcc -E  conftest.c >/dev/null 2>conftest.out
+configure:1752: checking for sys/times.h
+configure:1762: gcc -E  conftest.c >/dev/null 2>conftest.out
+configure:1752: checking for sys/stat.h
+configure:1762: gcc -E  conftest.c >/dev/null 2>conftest.out
+configure:1752: checking for direct.h
+configure:1762: gcc -E  conftest.c >/dev/null 2>conftest.out
+configure:1758:10: fatal error: direct.h: No such file or directory
+ #include <$ac_hdr>
+          ^~~~~~~~~ 
+compilation terminated.
+configure: failed program was:
+#line 1757 "configure"
+#include "confdefs.h"
+#include <direct.h>
+configure:1752: checking for malloc.h
+configure:1752: checking for langinfo.h
+configure:1762: gcc -E  conftest.c >/dev/null 2>conftest.out
+configure:1793: checking for CHAR_BIT
+configure:1866: checking byte ordering
+configure:1900: gcc -c -g -O2  conftest.c 1>&5
+configure:1943: checking for mktemp
+configure:1974: checking for strip
+configure:2007: checking for preprocessor stringizing operator
+configure:2045: checking for inttypes.h
+configure:2058: gcc -c -g -O2  conftest.c 1>&5
+configure:2082: checking for times
+configure:2110: gcc -o conftest -g -O2   conftest.c  1>&5
+configure:2082: checking for clock
+configure:2110: gcc -o conftest -g -O2   conftest.c  1>&5
+configure:2082: checking for strchr
+configure:2082: checking for strrchr
+configure:2110: gcc -o conftest -g -O2   conftest.c  1>&5
+configure:2094:6: warning: conflicting types for built-in function 'strrchr' [-Wbuiltin-declaration-mismatch]
+ char $ac_func();
+      ^~~~~~~
+configure:2082: checking for lstat
+configure:2110: gcc -o conftest -g -O2   conftest.c  1>&5
+configure:2136: checking for ssize_t
+configure:2172: checking for getpagesize
+configure:2200: gcc -o conftest -g -O2   conftest.c  1>&5
+configure:2471: checking for working mmap from /dev/zero
+configure:2491: gcc -o conftest -g -O2   conftest.c  1>&5
+In file included from configure:2488:0:
+ct-mmap.inc: In function 'test_0':
+ct-mmap.inc:59:21: warning: implicit declaration of function 'exit' [-Wimplicit-function-declaration]
+   do { perror(str); exit(val); } while (0)
+                     ^
+ct-mmap.inc:97:5: note: in expansion of macro 'perror_exit'
+     perror_exit("test 0 mmap", 2);
+     ^~~~~~~~~~~
+ct-mmap.inc:59:21: warning: incompatible implicit declaration of built-in function 'exit'
+   do { perror(str); exit(val); } while (0)
+                     ^
+ct-mmap.inc:97:5: note: in expansion of macro 'perror_exit'
+     perror_exit("test 0 mmap", 2);
+     ^~~~~~~~~~~
+ct-mmap.inc:59:21: note: include '<stdlib.h>' or provide a declaration of 'exit'
+   do { perror(str); exit(val); } while (0)
+                     ^
+ct-mmap.inc:97:5: note: in expansion of macro 'perror_exit'
+     perror_exit("test 0 mmap", 2);
+     ^~~~~~~~~~~
+ct-mmap.inc:59:21: warning: incompatible implicit declaration of built-in function 'exit'
+   do { perror(str); exit(val); } while (0)
+                     ^
+ct-mmap.inc:102:5: note: in expansion of macro 'perror_exit'
+     perror_exit("test 0 munmap", 3);
+     ^~~~~~~~~~~
+ct-mmap.inc:59:21: note: include '<stdlib.h>' or provide a declaration of 'exit'
+   do { perror(str); exit(val); } while (0)
+                     ^
+ct-mmap.inc:102:5: note: in expansion of macro 'perror_exit'
+     perror_exit("test 0 munmap", 3);
+     ^~~~~~~~~~~
+ct-mmap.inc: In function 'test_1':
+ct-mmap.inc:59:21: warning: incompatible implicit declaration of built-in function 'exit'
+   do { perror(str); exit(val); } while (0)
+                     ^
+ct-mmap.inc:112:5: note: in expansion of macro 'perror_exit'
+     perror_exit ("test 1 mmap", 4);
+     ^~~~~~~~~~~
+ct-mmap.inc:59:21: note: include '<stdlib.h>' or provide a declaration of 'exit'
+   do { perror(str); exit(val); } while (0)
+                     ^
+ct-mmap.inc:112:5: note: in expansion of macro 'perror_exit'
+     perror_exit ("test 1 mmap", 4);
+     ^~~~~~~~~~~
+ct-mmap.inc:59:21: warning: incompatible implicit declaration of built-in function 'exit'
+   do { perror(str); exit(val); } while (0)
+                     ^
+ct-mmap.inc:116:5: note: in expansion of macro 'perror_exit'
+     perror_exit ("test 1 fault", 5);
+     ^~~~~~~~~~~
+ct-mmap.inc:59:21: note: include '<stdlib.h>' or provide a declaration of 'exit'
+   do { perror(str); exit(val); } while (0)
+                     ^
+ct-mmap.inc:116:5: note: in expansion of macro 'perror_exit'
+     perror_exit ("test 1 fault", 5);
+     ^~~~~~~~~~~
+ct-mmap.inc:59:21: warning: incompatible implicit declaration of built-in function 'exit'
+   do { perror(str); exit(val); } while (0)
+                     ^
+ct-mmap.inc:122:5: note: in expansion of macro 'perror_exit'
+     perror_exit ("test 1 munmap 1", 6);
+     ^~~~~~~~~~~
+ct-mmap.inc:59:21: note: include '<stdlib.h>' or provide a declaration of 'exit'
+   do { perror(str); exit(val); } while (0)
+                     ^
+ct-mmap.inc:122:5: note: in expansion of macro 'perror_exit'
+     perror_exit ("test 1 munmap 1", 6);
+     ^~~~~~~~~~~
+ct-mmap.inc:59:21: warning: incompatible implicit declaration of built-in function 'exit'
+   do { perror(str); exit(val); } while (0)
+                     ^
+ct-mmap.inc:128:7: note: in expansion of macro 'perror_exit'
+       perror_exit ("test 1 no fault", 7);
+       ^~~~~~~~~~~
+ct-mmap.inc:59:21: note: include '<stdlib.h>' or provide a declaration of 'exit'
+   do { perror(str); exit(val); } while (0)
+                     ^
+ct-mmap.inc:128:7: note: in expansion of macro 'perror_exit'
+       perror_exit ("test 1 no fault", 7);
+       ^~~~~~~~~~~
+ct-mmap.inc:59:21: warning: incompatible implicit declaration of built-in function 'exit'
+   do { perror(str); exit(val); } while (0)
+                     ^
+ct-mmap.inc:131:5: note: in expansion of macro 'perror_exit'
+     perror_exit ("test 1 munmap 2", 8);
+     ^~~~~~~~~~~
+ct-mmap.inc:59:21: note: include '<stdlib.h>' or provide a declaration of 'exit'
+   do { perror(str); exit(val); } while (0)
+                     ^
+ct-mmap.inc:131:5: note: in expansion of macro 'perror_exit'
+     perror_exit ("test 1 munmap 2", 8);
+     ^~~~~~~~~~~
+ct-mmap.inc: In function 'test_2':
+ct-mmap.inc:59:21: warning: incompatible implicit declaration of built-in function 'exit'
+   do { perror(str); exit(val); } while (0)
+                     ^
+ct-mmap.inc:141:5: note: in expansion of macro 'perror_exit'
+     perror_exit ("test 2 mmap", 9);
+     ^~~~~~~~~~~
+ct-mmap.inc:59:21: note: include '<stdlib.h>' or provide a declaration of 'exit'
+   do { perror(str); exit(val); } while (0)
+                     ^
+ct-mmap.inc:141:5: note: in expansion of macro 'perror_exit'
+     perror_exit ("test 2 mmap", 9);
+     ^~~~~~~~~~~
+ct-mmap.inc:59:21: warning: incompatible implicit declaration of built-in function 'exit'
+   do { perror(str); exit(val); } while (0)
+                     ^
+ct-mmap.inc:145:5: note: in expansion of macro 'perror_exit'
+     perror_exit ("test 2 fault", 10);
+     ^~~~~~~~~~~
+ct-mmap.inc:59:21: note: include '<stdlib.h>' or provide a declaration of 'exit'
+   do { perror(str); exit(val); } while (0)
+                     ^
+ct-mmap.inc:145:5: note: in expansion of macro 'perror_exit'
+     perror_exit ("test 2 fault", 10);
+     ^~~~~~~~~~~
+ct-mmap.inc:59:21: warning: incompatible implicit declaration of built-in function 'exit'
+   do { perror(str); exit(val); } while (0)
+                     ^
+ct-mmap.inc:151:5: note: in expansion of macro 'perror_exit'
+     perror_exit ("test 2 munmap 1", 11);
+     ^~~~~~~~~~~
+ct-mmap.inc:59:21: note: include '<stdlib.h>' or provide a declaration of 'exit'
+   do { perror(str); exit(val); } while (0)
+                     ^
+ct-mmap.inc:151:5: note: in expansion of macro 'perror_exit'
+     perror_exit ("test 2 munmap 1", 11);
+     ^~~~~~~~~~~
+ct-mmap.inc:59:21: warning: incompatible implicit declaration of built-in function 'exit'
+   do { perror(str); exit(val); } while (0)
+                     ^
+ct-mmap.inc:158:7: note: in expansion of macro 'perror_exit'
+       perror_exit ("test 2 no fault", 12);
+       ^~~~~~~~~~~
+ct-mmap.inc:59:21: note: include '<stdlib.h>' or provide a declaration of 'exit'
+   do { perror(str); exit(val); } while (0)
+                     ^
+ct-mmap.inc:158:7: note: in expansion of macro 'perror_exit'
+       perror_exit ("test 2 no fault", 12);
+       ^~~~~~~~~~~
+ct-mmap.inc:59:21: warning: incompatible implicit declaration of built-in function 'exit'
+   do { perror(str); exit(val); } while (0)
+                     ^
+ct-mmap.inc:162:5: note: in expansion of macro 'perror_exit'
+     perror_exit ("test 2 munmap 2", 13);
+     ^~~~~~~~~~~
+ct-mmap.inc:59:21: note: include '<stdlib.h>' or provide a declaration of 'exit'
+   do { perror(str); exit(val); } while (0)
+                     ^
+ct-mmap.inc:162:5: note: in expansion of macro 'perror_exit'
+     perror_exit ("test 2 munmap 2", 13);
+     ^~~~~~~~~~~
+ct-mmap.inc: In function 'test_3':
+ct-mmap.inc:59:21: warning: incompatible implicit declaration of built-in function 'exit'
+   do { perror(str); exit(val); } while (0)
+                     ^
+ct-mmap.inc:182:5: note: in expansion of macro 'perror_exit'
+     perror_exit ("test 3 mmap 1", 14);
+     ^~~~~~~~~~~
+ct-mmap.inc:59:21: note: include '<stdlib.h>' or provide a declaration of 'exit'
+   do { perror(str); exit(val); } while (0)
+                     ^
+ct-mmap.inc:182:5: note: in expansion of macro 'perror_exit'
+     perror_exit ("test 3 mmap 1", 14);
+     ^~~~~~~~~~~
+ct-mmap.inc:59:21: warning: incompatible implicit declaration of built-in function 'exit'
+   do { perror(str); exit(val); } while (0)
+                     ^
+ct-mmap.inc:185:5: note: in expansion of macro 'perror_exit'
+     perror_exit ("test 3 mmap 2", 15);
+     ^~~~~~~~~~~
+ct-mmap.inc:59:21: note: include '<stdlib.h>' or provide a declaration of 'exit'
+   do { perror(str); exit(val); } while (0)
+                     ^
+ct-mmap.inc:185:5: note: in expansion of macro 'perror_exit'
+     perror_exit ("test 3 mmap 2", 15);
+     ^~~~~~~~~~~
+ct-mmap.inc:195:4: warning: incompatible implicit declaration of built-in function 'exit'
+    exit (16);
+    ^~~~
+ct-mmap.inc:195:4: note: include '<stdlib.h>' or provide a declaration of 'exit'
+ct-mmap.inc:59:21: warning: incompatible implicit declaration of built-in function 'exit'
+   do { perror(str); exit(val); } while (0)
+                     ^
+ct-mmap.inc:201:5: note: in expansion of macro 'perror_exit'
+     perror_exit ("test 3 fault", 17);
+     ^~~~~~~~~~~
+ct-mmap.inc:59:21: note: include '<stdlib.h>' or provide a declaration of 'exit'
+   do { perror(str); exit(val); } while (0)
+                     ^
+ct-mmap.inc:201:5: note: in expansion of macro 'perror_exit'
+     perror_exit ("test 3 fault", 17);
+     ^~~~~~~~~~~
+ct-mmap.inc:59:21: warning: incompatible implicit declaration of built-in function 'exit'
+   do { perror(str); exit(val); } while (0)
+                     ^
+ct-mmap.inc:207:5: note: in expansion of macro 'perror_exit'
+     perror_exit ("test 3 munmap", 18);
+     ^~~~~~~~~~~
+ct-mmap.inc:59:21: note: include '<stdlib.h>' or provide a declaration of 'exit'
+   do { perror(str); exit(val); } while (0)
+                     ^
+ct-mmap.inc:207:5: note: in expansion of macro 'perror_exit'
+     perror_exit ("test 3 munmap", 18);
+     ^~~~~~~~~~~
+ct-mmap.inc:59:21: warning: incompatible implicit declaration of built-in function 'exit'
+   do { perror(str); exit(val); } while (0)
+                     ^
+ct-mmap.inc:212:7: note: in expansion of macro 'perror_exit'
+       perror_exit ("test 3 no fault 1", 19);
+       ^~~~~~~~~~~
+ct-mmap.inc:59:21: note: include '<stdlib.h>' or provide a declaration of 'exit'
+   do { perror(str); exit(val); } while (0)
+                     ^
+ct-mmap.inc:212:7: note: in expansion of macro 'perror_exit'
+       perror_exit ("test 3 no fault 1", 19);
+       ^~~~~~~~~~~
+ct-mmap.inc:59:21: warning: incompatible implicit declaration of built-in function 'exit'
+   do { perror(str); exit(val); } while (0)
+                     ^
+ct-mmap.inc:219:7: note: in expansion of macro 'perror_exit'
+       perror_exit ("test 3 no fault 2", 20);
+       ^~~~~~~~~~~
+ct-mmap.inc:59:21: note: include '<stdlib.h>' or provide a declaration of 'exit'
+   do { perror(str); exit(val); } while (0)
+                     ^
+ct-mmap.inc:219:7: note: in expansion of macro 'perror_exit'
+       perror_exit ("test 3 no fault 2", 20);
+       ^~~~~~~~~~~
+ct-mmap.inc: In function 'main':
+ct-mmap.inc:228:8: warning: implicit declaration of function 'getpagesize' [-Wimplicit-function-declaration]
+   pg = getpagesize ();
+        ^~~~~~~~~~~
+ct-mmap.inc:59:21: warning: incompatible implicit declaration of built-in function 'exit'
+   do { perror(str); exit(val); } while (0)
+                     ^
+ct-mmap.inc:232:5: note: in expansion of macro 'perror_exit'
+     perror_exit ("open /dev/zero", 1);
+     ^~~~~~~~~~~
+ct-mmap.inc:59:21: note: include '<stdlib.h>' or provide a declaration of 'exit'
+   do { perror(str); exit(val); } while (0)
+                     ^
+ct-mmap.inc:232:5: note: in expansion of macro 'perror_exit'
+     perror_exit ("open /dev/zero", 1);
+     ^~~~~~~~~~~
+ct-mmap.inc:240:3: warning: incompatible implicit declaration of built-in function 'exit'
+   exit(0);
+   ^~~~
+ct-mmap.inc:240:3: note: include '<stdlib.h>' or provide a declaration of 'exit'
+configure:2518: checking for working mmap with MAP_ANON(YMOUS)
+configure:2533: gcc -o conftest -g -O2   conftest.c  1>&5
+In file included from configure:2530:0:
+ct-mmap.inc: In function 'test_0':
+ct-mmap.inc:59:21: warning: implicit declaration of function 'exit' [-Wimplicit-function-declaration]
+   do { perror(str); exit(val); } while (0)
+                     ^
+ct-mmap.inc:97:5: note: in expansion of macro 'perror_exit'
+     perror_exit("test 0 mmap", 2);
+     ^~~~~~~~~~~
+ct-mmap.inc:59:21: warning: incompatible implicit declaration of built-in function 'exit'
+   do { perror(str); exit(val); } while (0)
+                     ^
+ct-mmap.inc:97:5: note: in expansion of macro 'perror_exit'
+     perror_exit("test 0 mmap", 2);
+     ^~~~~~~~~~~
+ct-mmap.inc:59:21: note: include '<stdlib.h>' or provide a declaration of 'exit'
+   do { perror(str); exit(val); } while (0)
+                     ^
+ct-mmap.inc:97:5: note: in expansion of macro 'perror_exit'
+     perror_exit("test 0 mmap", 2);
+     ^~~~~~~~~~~
+ct-mmap.inc:59:21: warning: incompatible implicit declaration of built-in function 'exit'
+   do { perror(str); exit(val); } while (0)
+                     ^
+ct-mmap.inc:102:5: note: in expansion of macro 'perror_exit'
+     perror_exit("test 0 munmap", 3);
+     ^~~~~~~~~~~
+ct-mmap.inc:59:21: note: include '<stdlib.h>' or provide a declaration of 'exit'
+   do { perror(str); exit(val); } while (0)
+                     ^
+ct-mmap.inc:102:5: note: in expansion of macro 'perror_exit'
+     perror_exit("test 0 munmap", 3);
+     ^~~~~~~~~~~
+ct-mmap.inc: In function 'test_1':
+ct-mmap.inc:59:21: warning: incompatible implicit declaration of built-in function 'exit'
+   do { perror(str); exit(val); } while (0)
+                     ^
+ct-mmap.inc:112:5: note: in expansion of macro 'perror_exit'
+     perror_exit ("test 1 mmap", 4);
+     ^~~~~~~~~~~
+ct-mmap.inc:59:21: note: include '<stdlib.h>' or provide a declaration of 'exit'
+   do { perror(str); exit(val); } while (0)
+                     ^
+ct-mmap.inc:112:5: note: in expansion of macro 'perror_exit'
+     perror_exit ("test 1 mmap", 4);
+     ^~~~~~~~~~~
+ct-mmap.inc:59:21: warning: incompatible implicit declaration of built-in function 'exit'
+   do { perror(str); exit(val); } while (0)
+                     ^
+ct-mmap.inc:116:5: note: in expansion of macro 'perror_exit'
+     perror_exit ("test 1 fault", 5);
+     ^~~~~~~~~~~
+ct-mmap.inc:59:21: note: include '<stdlib.h>' or provide a declaration of 'exit'
+   do { perror(str); exit(val); } while (0)
+                     ^
+ct-mmap.inc:116:5: note: in expansion of macro 'perror_exit'
+     perror_exit ("test 1 fault", 5);
+     ^~~~~~~~~~~
+ct-mmap.inc:59:21: warning: incompatible implicit declaration of built-in function 'exit'
+   do { perror(str); exit(val); } while (0)
+                     ^
+ct-mmap.inc:122:5: note: in expansion of macro 'perror_exit'
+     perror_exit ("test 1 munmap 1", 6);
+     ^~~~~~~~~~~
+ct-mmap.inc:59:21: note: include '<stdlib.h>' or provide a declaration of 'exit'
+   do { perror(str); exit(val); } while (0)
+                     ^
+ct-mmap.inc:122:5: note: in expansion of macro 'perror_exit'
+     perror_exit ("test 1 munmap 1", 6);
+     ^~~~~~~~~~~
+ct-mmap.inc:59:21: warning: incompatible implicit declaration of built-in function 'exit'
+   do { perror(str); exit(val); } while (0)
+                     ^
+ct-mmap.inc:128:7: note: in expansion of macro 'perror_exit'
+       perror_exit ("test 1 no fault", 7);
+       ^~~~~~~~~~~
+ct-mmap.inc:59:21: note: include '<stdlib.h>' or provide a declaration of 'exit'
+   do { perror(str); exit(val); } while (0)
+                     ^
+ct-mmap.inc:128:7: note: in expansion of macro 'perror_exit'
+       perror_exit ("test 1 no fault", 7);
+       ^~~~~~~~~~~
+ct-mmap.inc:59:21: warning: incompatible implicit declaration of built-in function 'exit'
+   do { perror(str); exit(val); } while (0)
+                     ^
+ct-mmap.inc:131:5: note: in expansion of macro 'perror_exit'
+     perror_exit ("test 1 munmap 2", 8);
+     ^~~~~~~~~~~
+ct-mmap.inc:59:21: note: include '<stdlib.h>' or provide a declaration of 'exit'
+   do { perror(str); exit(val); } while (0)
+                     ^
+ct-mmap.inc:131:5: note: in expansion of macro 'perror_exit'
+     perror_exit ("test 1 munmap 2", 8);
+     ^~~~~~~~~~~
+ct-mmap.inc: In function 'test_2':
+ct-mmap.inc:59:21: warning: incompatible implicit declaration of built-in function 'exit'
+   do { perror(str); exit(val); } while (0)
+                     ^
+ct-mmap.inc:141:5: note: in expansion of macro 'perror_exit'
+     perror_exit ("test 2 mmap", 9);
+     ^~~~~~~~~~~
+ct-mmap.inc:59:21: note: include '<stdlib.h>' or provide a declaration of 'exit'
+   do { perror(str); exit(val); } while (0)
+                     ^
+ct-mmap.inc:141:5: note: in expansion of macro 'perror_exit'
+     perror_exit ("test 2 mmap", 9);
+     ^~~~~~~~~~~
+ct-mmap.inc:59:21: warning: incompatible implicit declaration of built-in function 'exit'
+   do { perror(str); exit(val); } while (0)
+                     ^
+ct-mmap.inc:145:5: note: in expansion of macro 'perror_exit'
+     perror_exit ("test 2 fault", 10);
+     ^~~~~~~~~~~
+ct-mmap.inc:59:21: note: include '<stdlib.h>' or provide a declaration of 'exit'
+   do { perror(str); exit(val); } while (0)
+                     ^
+ct-mmap.inc:145:5: note: in expansion of macro 'perror_exit'
+     perror_exit ("test 2 fault", 10);
+     ^~~~~~~~~~~
+ct-mmap.inc:59:21: warning: incompatible implicit declaration of built-in function 'exit'
+   do { perror(str); exit(val); } while (0)
+                     ^
+ct-mmap.inc:151:5: note: in expansion of macro 'perror_exit'
+     perror_exit ("test 2 munmap 1", 11);
+     ^~~~~~~~~~~
+ct-mmap.inc:59:21: note: include '<stdlib.h>' or provide a declaration of 'exit'
+   do { perror(str); exit(val); } while (0)
+                     ^
+ct-mmap.inc:151:5: note: in expansion of macro 'perror_exit'
+     perror_exit ("test 2 munmap 1", 11);
+     ^~~~~~~~~~~
+ct-mmap.inc:59:21: warning: incompatible implicit declaration of built-in function 'exit'
+   do { perror(str); exit(val); } while (0)
+                     ^
+ct-mmap.inc:158:7: note: in expansion of macro 'perror_exit'
+       perror_exit ("test 2 no fault", 12);
+       ^~~~~~~~~~~
+ct-mmap.inc:59:21: note: include '<stdlib.h>' or provide a declaration of 'exit'
+   do { perror(str); exit(val); } while (0)
+                     ^
+ct-mmap.inc:158:7: note: in expansion of macro 'perror_exit'
+       perror_exit ("test 2 no fault", 12);
+       ^~~~~~~~~~~
+ct-mmap.inc:59:21: warning: incompatible implicit declaration of built-in function 'exit'
+   do { perror(str); exit(val); } while (0)
+                     ^
+ct-mmap.inc:162:5: note: in expansion of macro 'perror_exit'
+     perror_exit ("test 2 munmap 2", 13);
+     ^~~~~~~~~~~
+ct-mmap.inc:59:21: note: include '<stdlib.h>' or provide a declaration of 'exit'
+   do { perror(str); exit(val); } while (0)
+                     ^
+ct-mmap.inc:162:5: note: in expansion of macro 'perror_exit'
+     perror_exit ("test 2 munmap 2", 13);
+     ^~~~~~~~~~~
+ct-mmap.inc: In function 'test_3':
+ct-mmap.inc:59:21: warning: incompatible implicit declaration of built-in function 'exit'
+   do { perror(str); exit(val); } while (0)
+                     ^
+ct-mmap.inc:182:5: note: in expansion of macro 'perror_exit'
+     perror_exit ("test 3 mmap 1", 14);
+     ^~~~~~~~~~~
+ct-mmap.inc:59:21: note: include '<stdlib.h>' or provide a declaration of 'exit'
+   do { perror(str); exit(val); } while (0)
+                     ^
+ct-mmap.inc:182:5: note: in expansion of macro 'perror_exit'
+     perror_exit ("test 3 mmap 1", 14);
+     ^~~~~~~~~~~
+ct-mmap.inc:59:21: warning: incompatible implicit declaration of built-in function 'exit'
+   do { perror(str); exit(val); } while (0)
+                     ^
+ct-mmap.inc:185:5: note: in expansion of macro 'perror_exit'
+     perror_exit ("test 3 mmap 2", 15);
+     ^~~~~~~~~~~
+ct-mmap.inc:59:21: note: include '<stdlib.h>' or provide a declaration of 'exit'
+   do { perror(str); exit(val); } while (0)
+                     ^
+ct-mmap.inc:185:5: note: in expansion of macro 'perror_exit'
+     perror_exit ("test 3 mmap 2", 15);
+     ^~~~~~~~~~~
+ct-mmap.inc:195:4: warning: incompatible implicit declaration of built-in function 'exit'
+    exit (16);
+    ^~~~
+ct-mmap.inc:195:4: note: include '<stdlib.h>' or provide a declaration of 'exit'
+ct-mmap.inc:59:21: warning: incompatible implicit declaration of built-in function 'exit'
+   do { perror(str); exit(val); } while (0)
+                     ^
+ct-mmap.inc:201:5: note: in expansion of macro 'perror_exit'
+     perror_exit ("test 3 fault", 17);
+     ^~~~~~~~~~~
+ct-mmap.inc:59:21: note: include '<stdlib.h>' or provide a declaration of 'exit'
+   do { perror(str); exit(val); } while (0)
+                     ^
+ct-mmap.inc:201:5: note: in expansion of macro 'perror_exit'
+     perror_exit ("test 3 fault", 17);
+     ^~~~~~~~~~~
+ct-mmap.inc:59:21: warning: incompatible implicit declaration of built-in function 'exit'
+   do { perror(str); exit(val); } while (0)
+                     ^
+ct-mmap.inc:207:5: note: in expansion of macro 'perror_exit'
+     perror_exit ("test 3 munmap", 18);
+     ^~~~~~~~~~~
+ct-mmap.inc:59:21: note: include '<stdlib.h>' or provide a declaration of 'exit'
+   do { perror(str); exit(val); } while (0)
+                     ^
+ct-mmap.inc:207:5: note: in expansion of macro 'perror_exit'
+     perror_exit ("test 3 munmap", 18);
+     ^~~~~~~~~~~
+ct-mmap.inc:59:21: warning: incompatible implicit declaration of built-in function 'exit'
+   do { perror(str); exit(val); } while (0)
+                     ^
+ct-mmap.inc:212:7: note: in expansion of macro 'perror_exit'
+       perror_exit ("test 3 no fault 1", 19);
+       ^~~~~~~~~~~
+ct-mmap.inc:59:21: note: include '<stdlib.h>' or provide a declaration of 'exit'
+   do { perror(str); exit(val); } while (0)
+                     ^
+ct-mmap.inc:212:7: note: in expansion of macro 'perror_exit'
+       perror_exit ("test 3 no fault 1", 19);
+       ^~~~~~~~~~~
+ct-mmap.inc:59:21: warning: incompatible implicit declaration of built-in function 'exit'
+   do { perror(str); exit(val); } while (0)
+                     ^
+ct-mmap.inc:219:7: note: in expansion of macro 'perror_exit'
+       perror_exit ("test 3 no fault 2", 20);
+       ^~~~~~~~~~~
+ct-mmap.inc:59:21: note: include '<stdlib.h>' or provide a declaration of 'exit'
+   do { perror(str); exit(val); } while (0)
+                     ^
+ct-mmap.inc:219:7: note: in expansion of macro 'perror_exit'
+       perror_exit ("test 3 no fault 2", 20);
+       ^~~~~~~~~~~
+ct-mmap.inc: In function 'main':
+ct-mmap.inc:228:8: warning: implicit declaration of function 'getpagesize' [-Wimplicit-function-declaration]
+   pg = getpagesize ();
+        ^~~~~~~~~~~
+ct-mmap.inc:240:3: warning: incompatible implicit declaration of built-in function 'exit'
+   exit(0);
+   ^~~~
+ct-mmap.inc:240:3: note: include '<stdlib.h>' or provide a declaration of 'exit'
+configure:2561: checking for working mmap of a file
+configure:2613: gcc -o conftest -g -O2   conftest.c  1>&5
+configure: In function 'main':
+configure:2594:5: warning: implicit declaration of function 'exit' [-Wimplicit-function-declaration]
+     exit(1);
+     ^~~~
+configure:2594:5: warning: incompatible implicit declaration of built-in function 'exit'
+configure:2594:5: note: include '<stdlib.h>' or provide a declaration of 'exit'
+configure:2597:5: warning: incompatible implicit declaration of built-in function 'exit'
+     exit(2);
+     ^~~~
+configure:2597:5: note: include '<stdlib.h>' or provide a declaration of 'exit'
+configure:2601:5: warning: incompatible implicit declaration of built-in function 'exit'
+     exit(3);
+     ^~~~
+configure:2601:5: note: include '<stdlib.h>' or provide a declaration of 'exit'
+configure:2604:5: warning: incompatible implicit declaration of built-in function 'exit'
+     exit(4);
+     ^~~~
+configure:2604:5: note: include '<stdlib.h>' or provide a declaration of 'exit'
+configure:2607:5: warning: incompatible implicit declaration of built-in function 'exit'
+     exit(5);
+     ^~~~
+configure:2607:5: note: include '<stdlib.h>' or provide a declaration of 'exit'
+configure:2609:3: warning: incompatible implicit declaration of built-in function 'exit'
+   exit(0);
+   ^~~~
+configure:2609:3: note: include '<stdlib.h>' or provide a declaration of 'exit'
+configure:2644: checking whether getenv is declared
+configure:2663: gcc -c -g -O2 -I. -I./../include  conftest.c 1>&5
+In file included from configure:2654:0:
+system.h:67:10: fatal error: safe-ctype.h: No such file or directory
+ #include <safe-ctype.h>
+          ^~~~~~~~~~~~~~
+compilation terminated.
+configure: failed program was:
+#line 2649 "configure"
+#include "confdefs.h"
+#undef HAVE_DECL_GETENV
+#define HAVE_DECL_GETENV 1
+  
+#include "ansidecl.h"
+#include "system.h"
+
+int main() {
+#ifndef getenv
+char *(*pfn) = (char *(*)) getenv ;
+#endif
+; return 0; }
+configure:2644: checking whether abort is declared
+configure:2663: gcc -c -g -O2 -I. -I./../include  conftest.c 1>&5
+In file included from configure:2654:0:
+system.h:67:10: fatal error: safe-ctype.h: No such file or directory
+ #include <safe-ctype.h>
+          ^~~~~~~~~~~~~~
+compilation terminated.
+configure: failed program was:
+#line 2649 "configure"
+#include "confdefs.h"
+#undef HAVE_DECL_ABORT
+#define HAVE_DECL_ABORT 1
+  
+#include "ansidecl.h"
+#include "system.h"
+
+int main() {
+#ifndef abort
+char *(*pfn) = (char *(*)) abort ;
+#endif
+; return 0; }
+configure:2644: checking whether errno is declared
+configure:2663: gcc -c -g -O2 -I. -I./../include  conftest.c 1>&5
+In file included from configure:2654:0:
+system.h:67:10: fatal error: safe-ctype.h: No such file or directory
+ #include <safe-ctype.h>
+          ^~~~~~~~~~~~~~
+compilation terminated.
+configure: failed program was:
+#line 2649 "configure"
+#include "confdefs.h"
+#undef HAVE_DECL_ERRNO
+#define HAVE_DECL_ERRNO 1
+  
+#include "ansidecl.h"
+#include "system.h"
+
+int main() {
+#ifndef errno
+char *(*pfn) = (char *(*)) errno ;
+#endif
+; return 0; }
+configure:2644: checking whether malloc is declared
+configure:2663: gcc -c -g -O2 -I. -I./../include  conftest.c 1>&5
+In file included from configure:2654:0:
+system.h:67:10: fatal error: safe-ctype.h: No such file or directory
+ #include <safe-ctype.h>
+          ^~~~~~~~~~~~~~
+compilation terminated.
+configure: failed program was:
+#line 2649 "configure"
+#include "confdefs.h"
+#undef HAVE_DECL_MALLOC
+#define HAVE_DECL_MALLOC 1
+  
+#include "ansidecl.h"
+#include "system.h"
+
+int main() {
+#ifndef malloc
+char *(*pfn) = (char *(*)) malloc ;
+#endif
+; return 0; }
+configure:2644: checking whether realloc is declared
+configure:2663: gcc -c -g -O2 -I. -I./../include  conftest.c 1>&5
+In file included from configure:2654:0:
+system.h:67:10: fatal error: safe-ctype.h: No such file or directory
+ #include <safe-ctype.h>
+          ^~~~~~~~~~~~~~
+compilation terminated.
+configure: failed program was:
+#line 2649 "configure"
+#include "confdefs.h"
+#undef HAVE_DECL_REALLOC
+#define HAVE_DECL_REALLOC 1
+  
+#include "ansidecl.h"
+#include "system.h"
+
+int main() {
+#ifndef realloc
+char *(*pfn) = (char *(*)) realloc ;
+#endif
+; return 0; }
+configure:2644: checking whether calloc is declared
+configure:2663: gcc -c -g -O2 -I. -I./../include  conftest.c 1>&5
+In file included from configure:2654:0:
+system.h:67:10: fatal error: safe-ctype.h: No such file or directory
+ #include <safe-ctype.h>
+          ^~~~~~~~~~~~~~
+compilation terminated.
+configure: failed program was:
+#line 2649 "configure"
+#include "confdefs.h"
+#undef HAVE_DECL_CALLOC
+#define HAVE_DECL_CALLOC 1
+  
+#include "ansidecl.h"
+#include "system.h"
+
+int main() {
+#ifndef calloc
+char *(*pfn) = (char *(*)) calloc ;
+#endif
+; return 0; }
+configure:2644: checking whether free is declared
+configure:2663: gcc -c -g -O2 -I. -I./../include  conftest.c 1>&5
+In file included from configure:2654:0:
+system.h:67:10: fatal error: safe-ctype.h: No such file or directory
+ #include <safe-ctype.h>
+          ^~~~~~~~~~~~~~
+compilation terminated.
+configure: failed program was:
+#line 2649 "configure"
+#include "confdefs.h"
+#undef HAVE_DECL_FREE
+#define HAVE_DECL_FREE 1
+  
+#include "ansidecl.h"
+#include "system.h"
+
+int main() {
+#ifndef free
+char *(*pfn) = (char *(*)) free ;
+#endif
+; return 0; }
+configure:2644: checking whether getopt is declared
+configure:2663: gcc -c -g -O2 -I. -I./../include  conftest.c 1>&5
+In file included from configure:2654:0:
+system.h:67:10: fatal error: safe-ctype.h: No such file or directory
+ #include <safe-ctype.h>
+          ^~~~~~~~~~~~~~
+compilation terminated.
+configure: failed program was:
+#line 2649 "configure"
+#include "confdefs.h"
+#undef HAVE_DECL_GETOPT
+#define HAVE_DECL_GETOPT 1
+  
+#include "ansidecl.h"
+#include "system.h"
+
+int main() {
+#ifndef getopt
+char *(*pfn) = (char *(*)) getopt ;
+#endif
+; return 0; }
+configure:2644: checking whether clock is declared
+configure:2663: gcc -c -g -O2 -I. -I./../include  conftest.c 1>&5
+In file included from configure:2654:0:
+system.h:67:10: fatal error: safe-ctype.h: No such file or directory
+ #include <safe-ctype.h>
+          ^~~~~~~~~~~~~~
+compilation terminated.
+configure: failed program was:
+#line 2649 "configure"
+#include "confdefs.h"
+#undef HAVE_DECL_CLOCK
+#define HAVE_DECL_CLOCK 1
+  
+#include "ansidecl.h"
+#include "system.h"
+
+int main() {
+#ifndef clock
+char *(*pfn) = (char *(*)) clock ;
+#endif
+; return 0; }
+configure:2724: checking whether times is declared
+configure:2747: gcc -c -g -O2 -I. -I./../include  conftest.c 1>&5
+In file included from configure:2734:0:
+system.h:67:10: fatal error: safe-ctype.h: No such file or directory
+ #include <safe-ctype.h>
+          ^~~~~~~~~~~~~~
+compilation terminated.
+configure: failed program was:
+#line 2729 "configure"
+#include "confdefs.h"
+#undef HAVE_DECL_TIMES
+#define HAVE_DECL_TIMES 1
+  
+#include "ansidecl.h"
+#include "system.h"
+#ifdef HAVE_SYS_TIMES_H
+#include <sys/times.h>
+#endif
+
+
+int main() {
+#ifndef times
+char *(*pfn) = (char *(*)) times ;
+#endif
+; return 0; }
+configure:2781: checking for struct tms
+configure:2800: gcc -c -g -O2 -I. -I./../include  conftest.c 1>&5
+In file included from configure:2790:0:
+system.h:67:10: fatal error: safe-ctype.h: No such file or directory
+ #include <safe-ctype.h>
+          ^~~~~~~~~~~~~~
+compilation terminated.
+configure: failed program was:
+#line 2787 "configure"
+#include "confdefs.h"
+
+#include "ansidecl.h"
+#include "system.h"
+#ifdef HAVE_SYS_TIMES_H
+#include <sys/times.h>
+#endif
+
+int main() {
+struct tms tms;
+; return 0; }
+configure:2823: checking for clock_t
+configure:2839: gcc -c -g -O2 -I. -I./../include  conftest.c 1>&5
+In file included from configure:2832:0:
+system.h:67:10: fatal error: safe-ctype.h: No such file or directory
+ #include <safe-ctype.h>
+          ^~~~~~~~~~~~~~
+compilation terminated.
+configure: failed program was:
+#line 2829 "configure"
+#include "confdefs.h"
+
+#include "ansidecl.h"
+#include "system.h"
+
+int main() {
+clock_t x;
+; return 0; }
+configure:2864: checking if mkdir takes one argument
+configure:2886: gcc -c -g -O2  conftest.c 1>&5
+configure:3051: checking what assembler to use
+configure:3136: checking what nm to use
+configure:3147: checking whether to enable maintainer-specific portions of Makefiles

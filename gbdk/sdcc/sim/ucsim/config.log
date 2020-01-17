@@ -1,0 +1,460 @@
+This file contains any messages produced by compilers while
+running configure, to aid debugging if configure makes a mistake.
+
+configure:532: checking for mawk
+configure:563: checking version of the package
+configure:603: checking for c++
+configure:635: checking whether the C++ compiler (g++  ) works
+configure:651: g++ -o conftest    conftest.C  1>&5
+configure:677: checking whether the C++ compiler (g++  ) is a cross-compiler
+configure:682: checking whether we are using GNU C++
+configure:710: checking whether g++ accepts -g
+configure:742: checking how to run the C++ preprocessor
+configure:760: g++ -E  conftest.C >/dev/null 2>conftest.out
+configure:815: checking for a BSD compatible install
+configure:870: checking for ranlib
+configure:908: checking for strip
+configure:944: checking for ANSI C header files
+configure:1054: checking for getopt.h
+configure:1094: checking for unistd.h
+configure:1132: checking for sys/socket.h
+configure:1194: checking for dlfcn.h
+configure:1204: g++ -E  conftest.C >/dev/null 2>conftest.out
+configure:1230: checking for dirent.h that defines DIR
+configure:1268: checking for opendir in -ldir
+configure:1360: checking which header file defines FD_ macros
+configure:1476: checking for socket in -lsocket
+configure:1498: g++ -o conftest    conftest.C -lsocket   1>&5
+In file included from configure:1484:0:
+confdefs.h:16:0: warning: "FD_HEADER_OK" redefined
+ #define FD_HEADER_OK 1
+ 
+confdefs.h:13:0: note: this is the location of the previous definition
+ #define FD_HEADER_OK 0
+ 
+/usr/bin/ld: cannot find -lsocket
+collect2: error: ld returned 1 exit status
+configure: failed program was:
+#line 1484 "configure"
+#include "confdefs.h"
+/* Override any gcc2 internal prototype to avoid an error.  */
+#ifdef __cplusplus
+extern "C"
+#endif
+/* We use char because int might match the return type of a gcc2
+    builtin and then its argument prototype would still apply.  */
+char socket();
+
+int main() {
+socket()
+; return 0; }
+configure:1526: checking for xdr_short in -lnsl
+configure:1548: g++ -o conftest    conftest.C -lnsl   1>&5
+In file included from configure:1534:0:
+confdefs.h:16:0: warning: "FD_HEADER_OK" redefined
+ #define FD_HEADER_OK 1
+ 
+confdefs.h:13:0: note: this is the location of the previous definition
+ #define FD_HEADER_OK 0
+ 
+configure:1576: checking for dlopen in -ldl
+configure:1598: g++ -o conftest    conftest.C -ldl  -lnsl  1>&5
+In file included from configure:1584:0:
+confdefs.h:16:0: warning: "FD_HEADER_OK" redefined
+ #define FD_HEADER_OK 1
+ 
+confdefs.h:13:0: note: this is the location of the previous definition
+ #define FD_HEADER_OK 0
+ 
+configure:1624: checking for panel_above in -lpanel
+configure:1646: g++ -o conftest    conftest.C -lpanel -lcurses -lnsl  1>&5
+In file included from configure:1632:0:
+confdefs.h:16:0: warning: "FD_HEADER_OK" redefined
+ #define FD_HEADER_OK 1
+ 
+confdefs.h:13:0: note: this is the location of the previous definition
+ #define FD_HEADER_OK 0
+ 
+configure:1722: checking for vprintf
+configure:1753: g++ -o conftest    conftest.C -lnsl  1>&5
+In file included from configure:1727:0:
+confdefs.h:16:0: warning: "FD_HEADER_OK" redefined
+ #define FD_HEADER_OK 1
+ 
+confdefs.h:13:0: note: this is the location of the previous definition
+ #define FD_HEADER_OK 0
+ 
+configure:1737:6: warning: declaration of 'char vprintf()' conflicts with built-in declaration 'int vprintf(const char*, __va_list_tag*)' [-Wbuiltin-declaration-mismatch]
+ char vprintf();
+      ^~~~~~~
+configure:1835: checking for vsnprintf
+configure:1866: g++ -o conftest    conftest.C -lnsl  1>&5
+In file included from configure:1840:0:
+confdefs.h:16:0: warning: "FD_HEADER_OK" redefined
+ #define FD_HEADER_OK 1
+ 
+confdefs.h:13:0: note: this is the location of the previous definition
+ #define FD_HEADER_OK 0
+ 
+configure:1850:6: warning: declaration of 'char vsnprintf()' conflicts with built-in declaration 'int vsnprintf(char*, long unsigned int, const char*, __va_list_tag*)' [-Wbuiltin-declaration-mismatch]
+ char $ac_func();
+      ^~~~~~~~~
+configure:1835: checking for vasprintf
+configure:1866: g++ -o conftest    conftest.C -lnsl  1>&5
+In file included from configure:1840:0:
+confdefs.h:16:0: warning: "FD_HEADER_OK" redefined
+ #define FD_HEADER_OK 1
+ 
+confdefs.h:13:0: note: this is the location of the previous definition
+ #define FD_HEADER_OK 0
+ 
+configure:1893: checking for strlen
+configure:1893: checking for strcpy
+configure:1893: checking for strcat
+configure:1893: checking for strstr
+configure:1893: checking for strcmp
+configure:1893: checking for strerror
+configure:1893: checking for strtok
+configure:1893: checking for strdup
+configure:1951: checking for strchr
+configure:1951: checking for memcpy
+configure:2009: checking for fgets
+configure:2067: checking for yylex
+configure:2124: checking whether scanf knows %a
+configure:2156: g++ -o conftest    conftest.C -lnsl  1>&5
+In file included from configure:2133:0:
+confdefs.h:16:0: warning: "FD_HEADER_OK" redefined
+ #define FD_HEADER_OK 1
+ 
+confdefs.h:13:0: note: this is the location of the previous definition
+ #define FD_HEADER_OK 0
+ 
+configure:2139:15: error: '::main' must return 'int'
+ void main(void)
+               ^
+configure: In function 'int main()':
+configure:2146:31: warning: format '%a' expects argument of type 'float*', but argument 3 has type 'char**' [-Wformat=]
+   i= fscanf(f, " %a[a-z] ", &a);
+                             ~~^
+configure: failed program was:
+#line 2133 "configure"
+#include "confdefs.h"
+#ifdef __cplusplus
+extern "C" void exit(int);
+#endif
+
+#include <stdio.h>
+void main(void)
+{
+  FILE *f;
+  char *a;
+  int  i;
+  if ((f= fopen("conftest.data", "r")) == NULL)
+    exit(1);
+  i= fscanf(f, " %a[a-z] ", &a);
+  fclose(f);
+  if (i == 0)
+    exit(2);
+  if (i == 1)
+    exit(0);
+  exit(3);
+}
+configure:2180: checking whether getcwd is GNUish
+configure:2202: g++ -o conftest    conftest.C -lnsl  1>&5
+In file included from configure:2188:0:
+confdefs.h:16:0: warning: "FD_HEADER_OK" redefined
+ #define FD_HEADER_OK 1
+ 
+confdefs.h:13:0: note: this is the location of the previous definition
+ #define FD_HEADER_OK 0
+ 
+configure:2194:15: error: '::main' must return 'int'
+ void main(void)
+               ^
+configure: failed program was:
+#line 2188 "configure"
+#include "confdefs.h"
+#ifdef __cplusplus
+extern "C" void exit(int);
+#endif
+
+#include <unistd.h>
+void main(void)
+{
+  if ((getcwd(NULL, 0)) == NULL)
+    exit(1);
+  exit(0);
+}
+configure:2229: checking for type of length pointer parameter of accept
+configure:2246: g++ -c   -DACCEPT_SOCKLEN_T=int conftest.C 1>&5
+In file included from configure:2238:0:
+confdefs.h:16:0: warning: "FD_HEADER_OK" redefined
+ #define FD_HEADER_OK 1
+ 
+confdefs.h:13:0: note: this is the location of the previous definition
+ #define FD_HEADER_OK 0
+ 
+configure: In function 'int main()':
+configure:2242:44: error: invalid conversion from 'int*' to 'socklen_t* {aka unsigned int*}' [-fpermissive]
+ struct sockaddr a; $ac_val len; accept (0, &a, &len);
+                                            ^~~~
+In file included from configure:2240:0:
+/usr/include/x86_64-linux-gnu/sys/socket.h:232:12: note:   initializing argument 3 of 'int accept(int, sockaddr*, socklen_t*)'
+ extern int accept (int __fd, __SOCKADDR_ARG __addr,
+            ^~~~~~
+configure: failed program was:
+#line 2238 "configure"
+#include "confdefs.h"
+#include <sys/types.h>
+#include <sys/socket.h>
+int main() {
+struct sockaddr a; int len; accept (0, &a, &len);
+; return 0; }
+configure:2246: g++ -c   -DACCEPT_SOCKLEN_T=size_t conftest.C 1>&5
+In file included from configure:2238:0:
+confdefs.h:16:0: warning: "FD_HEADER_OK" redefined
+ #define FD_HEADER_OK 1
+ 
+confdefs.h:13:0: note: this is the location of the previous definition
+ #define FD_HEADER_OK 0
+ 
+configure: In function 'int main()':
+configure:2242:51: error: cannot convert 'size_t* {aka long unsigned int*}' to 'socklen_t* {aka unsigned int*}' for argument '3' to 'int accept(int, sockaddr*, socklen_t*)'
+ struct sockaddr a; $ac_val len; accept (0, &a, &len);
+                                                   ^
+configure: failed program was:
+#line 2238 "configure"
+#include "confdefs.h"
+#include <sys/types.h>
+#include <sys/socket.h>
+int main() {
+struct sockaddr a; size_t len; accept (0, &a, &len);
+; return 0; }
+configure:2246: g++ -c   -DACCEPT_SOCKLEN_T=socklen_t conftest.C 1>&5
+In file included from configure:2238:0:
+confdefs.h:16:0: warning: "FD_HEADER_OK" redefined
+ #define FD_HEADER_OK 1
+ 
+confdefs.h:13:0: note: this is the location of the previous definition
+ #define FD_HEADER_OK 0
+ 
+configure:2293: checking whether byte ordering is bigendian
+configure:2311: g++ -c   conftest.C 1>&5
+In file included from configure:2300:0:
+confdefs.h:16:0: warning: "FD_HEADER_OK" redefined
+ #define FD_HEADER_OK 1
+ 
+confdefs.h:13:0: note: this is the location of the previous definition
+ #define FD_HEADER_OK 0
+ 
+configure:2326: g++ -c   conftest.C 1>&5
+In file included from configure:2315:0:
+confdefs.h:16:0: warning: "FD_HEADER_OK" redefined
+ #define FD_HEADER_OK 1
+ 
+confdefs.h:13:0: note: this is the location of the previous definition
+ #define FD_HEADER_OK 0
+ 
+configure: In function 'int main()':
+configure:2321:6: error: 'big' was not declared in this scope
+  not big endian
+      ^~~
+configure: failed program was:
+#line 2315 "configure"
+#include "confdefs.h"
+#include <sys/types.h>
+#include <sys/param.h>
+int main() {
+
+#if BYTE_ORDER != BIG_ENDIAN
+ not big endian
+#endif
+; return 0; }
+configure:2386: checking whether preprocessor accepts -MM or -M
+Using built-in specs.
+COLLECT_GCC=g++
+OFFLOAD_TARGET_NAMES=nvptx-none
+OFFLOAD_TARGET_DEFAULT=1
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 7.4.0-1ubuntu1~18.04.1' --with-bugurl=file:///usr/share/doc/gcc-7/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++ --prefix=/usr --with-gcc-major-version-only --program-suffix=-7 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-libmpx --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+Thread model: posix
+gcc version 7.4.0 (Ubuntu 7.4.0-1ubuntu1~18.04.1) 
+COLLECT_GCC_OPTIONS='-E' '-v' '-MM' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/7/cc1plus -E -quiet -v -imultiarch x86_64-linux-gnu -MM -D_GNU_SOURCE _test_.c -mtune=generic -march=x86-64 -fstack-protector-strong -Wformat -Wformat-security
+ignoring duplicate directory "/usr/include/x86_64-linux-gnu/c++/7"
+ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
+ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/7/../../../../x86_64-linux-gnu/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/include/c++/7
+ /usr/include/x86_64-linux-gnu/c++/7
+ /usr/include/c++/7/backward
+ /usr/lib/gcc/x86_64-linux-gnu/7/include
+ /usr/local/include
+ /usr/lib/gcc/x86_64-linux-gnu/7/include-fixed
+ /usr/include/x86_64-linux-gnu
+ /usr/include
+End of search list.
+_test_.o: _test_.c
+COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-E' '-v' '-MM' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+configure:2409: checking whether g++ accepts -ggdb
+Using built-in specs.
+COLLECT_GCC=g++
+OFFLOAD_TARGET_NAMES=nvptx-none
+OFFLOAD_TARGET_DEFAULT=1
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 7.4.0-1ubuntu1~18.04.1' --with-bugurl=file:///usr/share/doc/gcc-7/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++ --prefix=/usr --with-gcc-major-version-only --program-suffix=-7 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-libmpx --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+Thread model: posix
+gcc version 7.4.0 (Ubuntu 7.4.0-1ubuntu1~18.04.1) 
+COLLECT_GCC_OPTIONS='-v' '-ggdb' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/7/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE _test_.c -quiet -dumpbase _test_.c -mtune=generic -march=x86-64 -auxbase _test_ -ggdb -version -fstack-protector-strong -Wformat -Wformat-security -o /tmp/cc2WPrHl.s
+GNU C++14 (Ubuntu 7.4.0-1ubuntu1~18.04.1) version 7.4.0 (x86_64-linux-gnu)
+	compiled by GNU C version 7.4.0, GMP version 6.1.2, MPFR version 4.0.1, MPC version 1.1.0, isl version isl-0.19-GMP
+
+GGC heuristics: --param ggc-min-expand=97 --param ggc-min-heapsize=125951
+ignoring duplicate directory "/usr/include/x86_64-linux-gnu/c++/7"
+ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
+ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/7/../../../../x86_64-linux-gnu/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/include/c++/7
+ /usr/include/x86_64-linux-gnu/c++/7
+ /usr/include/c++/7/backward
+ /usr/lib/gcc/x86_64-linux-gnu/7/include
+ /usr/local/include
+ /usr/lib/gcc/x86_64-linux-gnu/7/include-fixed
+ /usr/include/x86_64-linux-gnu
+ /usr/include
+End of search list.
+GNU C++14 (Ubuntu 7.4.0-1ubuntu1~18.04.1) version 7.4.0 (x86_64-linux-gnu)
+	compiled by GNU C version 7.4.0, GMP version 6.1.2, MPFR version 4.0.1, MPC version 1.1.0, isl version isl-0.19-GMP
+
+GGC heuristics: --param ggc-min-expand=97 --param ggc-min-heapsize=125951
+Compiler executable checksum: 38816e3807cdcb3c59571e251bd6c090
+_test_.c:2:15: error: '::main' must return 'int'
+ void main(void) {}
+               ^
+configure:2438: checking whether g++ accepts -pipe
+Using built-in specs.
+COLLECT_GCC=g++
+OFFLOAD_TARGET_NAMES=nvptx-none
+OFFLOAD_TARGET_DEFAULT=1
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 7.4.0-1ubuntu1~18.04.1' --with-bugurl=file:///usr/share/doc/gcc-7/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++ --prefix=/usr --with-gcc-major-version-only --program-suffix=-7 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-libmpx --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+Thread model: posix
+gcc version 7.4.0 (Ubuntu 7.4.0-1ubuntu1~18.04.1) 
+COLLECT_GCC_OPTIONS='-v' '-pipe' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/7/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE _test_.c -quiet -dumpbase _test_.c -mtune=generic -march=x86-64 -auxbase _test_ -version -fstack-protector-strong -Wformat -Wformat-security -o - |
+ as -v --64 -o _test_.o
+GNU C++14 (Ubuntu 7.4.0-1ubuntu1~18.04.1) version 7.4.0 (x86_64-linux-gnu)
+	compiled by GNU C version 7.4.0, GMP version 6.1.2, MPFR version 4.0.1, MPC version 1.1.0, isl version isl-0.19-GMP
+
+GGC heuristics: --param ggc-min-expand=97 --param ggc-min-heapsize=125951
+ignoring duplicate directory "/usr/include/x86_64-linux-gnu/c++/7"
+ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
+ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/7/../../../../x86_64-linux-gnu/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/include/c++/7
+ /usr/include/x86_64-linux-gnu/c++/7
+ /usr/include/c++/7/backward
+ /usr/lib/gcc/x86_64-linux-gnu/7/include
+ /usr/local/include
+ /usr/lib/gcc/x86_64-linux-gnu/7/include-fixed
+ /usr/include/x86_64-linux-gnu
+ /usr/include
+End of search list.
+GNU C++14 (Ubuntu 7.4.0-1ubuntu1~18.04.1) version 7.4.0 (x86_64-linux-gnu)
+	compiled by GNU C version 7.4.0, GMP version 6.1.2, MPFR version 4.0.1, MPC version 1.1.0, isl version isl-0.19-GMP
+
+GGC heuristics: --param ggc-min-expand=97 --param ggc-min-heapsize=125951
+GNU assembler version 2.30 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.30
+Compiler executable checksum: 38816e3807cdcb3c59571e251bd6c090
+_test_.c:2:15: error: '::main' must return 'int'
+ void main(void) {}
+               ^
+configure:2465: checking whether g++ accepts -fPIC
+Using built-in specs.
+COLLECT_GCC=g++
+OFFLOAD_TARGET_NAMES=nvptx-none
+OFFLOAD_TARGET_DEFAULT=1
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 7.4.0-1ubuntu1~18.04.1' --with-bugurl=file:///usr/share/doc/gcc-7/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++ --prefix=/usr --with-gcc-major-version-only --program-suffix=-7 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-libmpx --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+Thread model: posix
+gcc version 7.4.0 (Ubuntu 7.4.0-1ubuntu1~18.04.1) 
+COLLECT_GCC_OPTIONS='-v' '-fPIC' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/7/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE _test_.c -quiet -dumpbase _test_.c -mtune=generic -march=x86-64 -auxbase _test_ -version -fPIC -fstack-protector-strong -Wformat -Wformat-security -o /tmp/ccccel1o.s
+GNU C++14 (Ubuntu 7.4.0-1ubuntu1~18.04.1) version 7.4.0 (x86_64-linux-gnu)
+	compiled by GNU C version 7.4.0, GMP version 6.1.2, MPFR version 4.0.1, MPC version 1.1.0, isl version isl-0.19-GMP
+
+GGC heuristics: --param ggc-min-expand=97 --param ggc-min-heapsize=125951
+ignoring duplicate directory "/usr/include/x86_64-linux-gnu/c++/7"
+ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
+ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/7/../../../../x86_64-linux-gnu/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/include/c++/7
+ /usr/include/x86_64-linux-gnu/c++/7
+ /usr/include/c++/7/backward
+ /usr/lib/gcc/x86_64-linux-gnu/7/include
+ /usr/local/include
+ /usr/lib/gcc/x86_64-linux-gnu/7/include-fixed
+ /usr/include/x86_64-linux-gnu
+ /usr/include
+End of search list.
+GNU C++14 (Ubuntu 7.4.0-1ubuntu1~18.04.1) version 7.4.0 (x86_64-linux-gnu)
+	compiled by GNU C version 7.4.0, GMP version 6.1.2, MPFR version 4.0.1, MPC version 1.1.0, isl version isl-0.19-GMP
+
+GGC heuristics: --param ggc-min-expand=97 --param ggc-min-heapsize=125951
+Compiler executable checksum: 38816e3807cdcb3c59571e251bd6c090
+_test_.c:2:15: error: '::main' must return 'int'
+ void main(void) {}
+               ^
+configure:2489: checking whether g++ accepts -fpic
+Using built-in specs.
+COLLECT_GCC=g++
+OFFLOAD_TARGET_NAMES=nvptx-none
+OFFLOAD_TARGET_DEFAULT=1
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 7.4.0-1ubuntu1~18.04.1' --with-bugurl=file:///usr/share/doc/gcc-7/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++ --prefix=/usr --with-gcc-major-version-only --program-suffix=-7 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-libmpx --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+Thread model: posix
+gcc version 7.4.0 (Ubuntu 7.4.0-1ubuntu1~18.04.1) 
+COLLECT_GCC_OPTIONS='-v' '-fpic' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/7/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE _test_.c -quiet -dumpbase _test_.c -mtune=generic -march=x86-64 -auxbase _test_ -version -fpic -fstack-protector-strong -Wformat -Wformat-security -o /tmp/cc0uVxRm.s
+GNU C++14 (Ubuntu 7.4.0-1ubuntu1~18.04.1) version 7.4.0 (x86_64-linux-gnu)
+	compiled by GNU C version 7.4.0, GMP version 6.1.2, MPFR version 4.0.1, MPC version 1.1.0, isl version isl-0.19-GMP
+
+GGC heuristics: --param ggc-min-expand=97 --param ggc-min-heapsize=125951
+ignoring duplicate directory "/usr/include/x86_64-linux-gnu/c++/7"
+ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
+ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/7/../../../../x86_64-linux-gnu/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/include/c++/7
+ /usr/include/x86_64-linux-gnu/c++/7
+ /usr/include/c++/7/backward
+ /usr/lib/gcc/x86_64-linux-gnu/7/include
+ /usr/local/include
+ /usr/lib/gcc/x86_64-linux-gnu/7/include-fixed
+ /usr/include/x86_64-linux-gnu
+ /usr/include
+End of search list.
+GNU C++14 (Ubuntu 7.4.0-1ubuntu1~18.04.1) version 7.4.0 (x86_64-linux-gnu)
+	compiled by GNU C version 7.4.0, GMP version 6.1.2, MPFR version 4.0.1, MPC version 1.1.0, isl version isl-0.19-GMP
+
+GGC heuristics: --param ggc-min-expand=97 --param ggc-min-heapsize=125951
+Compiler executable checksum: 38816e3807cdcb3c59571e251bd6c090
+_test_.c:2:15: error: '::main' must return 'int'
+ void main(void) {}
+               ^
+configure:2531: checking return type of signal handlers
+configure:2572: checking size of char
+configure:2615: checking size of short
+configure:2658: checking size of int
+configure:2701: checking size of long
+configure:2744: checking size of long long
+configure:2813: checking type name for byte
+configure:2817: checking type name for word
+configure:2821: checking type name for dword
