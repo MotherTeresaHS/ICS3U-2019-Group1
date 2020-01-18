@@ -1,5 +1,7 @@
 #include <gb/gb.h>
 #include <stdio.h>
+#include <time.h>
+#include <stdlib.h>
 #include "charSprites.c"
 #include "background.c"
 #include "backgroundTiles.c"
@@ -18,6 +20,7 @@ struct GameCharacter frog;
 int kills = 1;
 UBYTE spritesize = 4;
 
+// This function slows down sprite movement
 void performantDelay(UINT8 numloops){
     UINT8 counter;
     for(counter = 0; counter < numloops; counter++){
@@ -26,18 +29,21 @@ void performantDelay(UINT8 numloops){
 }
 
 
+// This function checks if sprites collide with each other
 UBYTE checkCollisions(struct GameCharacter* one, struct GameCharacter* two){
     return (one->x >= two->x && one->x <= two->x + two->width) && (one->y >= two->y && one->y <= two->y + two->height)
            || (two->x >= one->x && two->x <= one->x + one->width) && (two->y >= one->y && two->y <= one->y + one->height);
 }
 
 
+// This function assembles games sprites
 void moveGameCharacter(struct GameCharacter* character, UINT8 x, UINT8 y){
     move_sprite(character->spritids[0], x, y);
 
 }
 
 
+// This function setups up bullet
 void setupBullet(){
     bullet.x = 180;
     bullet.y = 180;
@@ -51,6 +57,7 @@ void setupBullet(){
 }
 
 
+// This function setups up tank
 void setupTank(){
     tank.x = 88;
     tank.y = 138;
@@ -64,8 +71,9 @@ void setupTank(){
 }
 
 
+// This function setups up frog
 void setupFrog(){
-    frog.x = 88;
+    frog.x = 160;
     frog.y = 255;
     frog.width = 8;
     frog.height = 8;
@@ -77,6 +85,7 @@ void setupFrog(){
 }
 
 
+// This function shoots a bullet
 void shoot(){
     kills = 1;
     bullet.y = tank.y;
@@ -113,6 +122,8 @@ void shoot(){
     }
 }
 
+
+// main game function
 void main(){
 
     UINT8 currentspriteindex = 0;
@@ -164,7 +175,10 @@ void main(){
         frog.y += 2;
         if(frog.y > 144){
             frog.y = -244;
-            frog.x = tank.x;
+            frog.x += 40;
+            if(frog.x > 144){
+                frog.x -= 144;
+            }
         }
         moveGameCharacter(&frog, frog.x, frog.y);
 
@@ -189,5 +203,13 @@ void main(){
                 shoot();
         }
     }
-     printf("\n \n \n \n \n \n \n === GAME  OVER ===");
+    printf("\n \n \n \n \n \n \n === GAME  OVER === \n  Press enter to \n play again ");
+    frog.x = 144;
+    frog.y = 161;
+    moveGameCharacter(&frog, frog.x, frog.y);
+    tank.x = 164;
+    tank.y =  175;
+    moveGameCharacter(&tank, tank.x, tank.y);
+    waitpad(J_START);
+    main();
 }
