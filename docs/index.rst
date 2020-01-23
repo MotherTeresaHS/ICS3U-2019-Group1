@@ -5,7 +5,7 @@ Home
 .. raw:: html
 
   <div style="text-align: center; margin-bottom: 2em;">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/PpzAbdmxzPU?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+    <iframe width="560" height="315" src="https://m.youtube.com/watch?v=OErzKfPS7wc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
     </iframe>
   </div>
 
