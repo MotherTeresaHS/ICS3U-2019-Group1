@@ -1,0 +1,389 @@
+This file contains any messages produced by compilers while
+running configure, to aid debugging if configure makes a mistake.
+
+configure:556: checking for mawk
+configure:587: checking version of the package
+configure:651: checking for gcc
+configure:764: checking whether the C compiler (gcc  ) works
+configure:780: gcc -o conftest    conftest.c  1>&5
+configure:777:1: warning: return type defaults to 'int' [-Wimplicit-int]
+ main(){return(0);}
+ ^~~~
+configure:806: checking whether the C compiler (gcc  ) is a cross-compiler
+configure:811: checking whether we are using GNU C
+configure:820: gcc -E conftest.c
+configure:839: checking whether gcc accepts -g
+configure:875: checking for c++
+configure:907: checking whether the C++ compiler (g++  ) works
+configure:923: g++ -o conftest    conftest.C  1>&5
+configure:949: checking whether the C++ compiler (g++  ) is a cross-compiler
+configure:954: checking whether we are using GNU C++
+configure:963: g++ -E conftest.C
+configure:982: checking whether g++ accepts -g
+configure:1014: checking how to run the C preprocessor
+configure:1035: gcc -E  conftest.c >/dev/null 2>conftest.out
+configure:1124: checking for a BSD compatible install
+configure:1179: checking for ranlib
+configure:1209: checking for flex
+configure:1243: checking for yywrap in -lfl
+configure:1262: gcc -o conftest -g -O2   conftest.c -lfl   1>&5
+/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/libfl.so: undefined reference to `yylex'
+collect2: error: ld returned 1 exit status
+configure: failed program was:
+#line 1251 "configure"
+#include "confdefs.h"
+/* Override any gcc2 internal prototype to avoid an error.  */
+/* We use char because int might match the return type of a gcc2
+    builtin and then its argument prototype would still apply.  */
+char yywrap();
+
+int main() {
+yywrap()
+; return 0; }
+configure:1287: checking for bison
+configure:1317: checking for autoconf
+configure:1347: checking for strip
+configure:1377: checking for as
+configure:1407: checking for cp
+configure:1457: checking for ANSI C header files
+configure:1470: gcc -E  conftest.c >/dev/null 2>conftest.out
+configure:1537: gcc -o conftest -g -O2   conftest.c  1>&5
+configure: In function 'main':
+configure:1532:67: warning: implicit declaration of function 'exit' [-Wimplicit-function-declaration]
+ if (XOR (islower (i), ISLOWER (i)) || toupper (i) != TOUPPER (i)) exit(2);
+                                                                   ^~~~
+configure:1532:67: warning: incompatible implicit declaration of built-in function 'exit'
+configure:1532:67: note: include '<stdlib.h>' or provide a declaration of 'exit'
+configure:1533:1: warning: incompatible implicit declaration of built-in function 'exit'
+ exit (0); }
+ ^~~~
+configure:1533:1: note: include '<stdlib.h>' or provide a declaration of 'exit'
+configure:1564: checking for getopt.h
+configure:1574: gcc -E  conftest.c >/dev/null 2>conftest.out
+configure:1604: checking for unistd.h
+configure:1614: gcc -E  conftest.c >/dev/null 2>conftest.out
+configure:1644: checking for endian.h
+configure:1654: gcc -E  conftest.c >/dev/null 2>conftest.out
+configure:1684: checking for machine/endian.h
+configure:1694: gcc -E  conftest.c >/dev/null 2>conftest.out
+configure:1690:10: fatal error: machine/endian.h: No such file or directory
+ #include <$ac_hdr>
+          ^~~~~~~~~         
+compilation terminated.
+configure: failed program was:
+#line 1689 "configure"
+#include "confdefs.h"
+#include <machine/endian.h>
+configure:1724: checking for malloc.h
+configure:1734: gcc -E  conftest.c >/dev/null 2>conftest.out
+configure:1764: checking for sys/isa_defs.h
+configure:1774: gcc -E  conftest.c >/dev/null 2>conftest.out
+configure:1770:10: fatal error: sys/isa_defs.h: No such file or directory
+ #include <$ac_hdr>
+          ^~~~~~~~~       
+compilation terminated.
+configure: failed program was:
+#line 1769 "configure"
+#include "confdefs.h"
+#include <sys/isa_defs.h>
+configure:1804: checking for sys/socket.h
+configure:1814: gcc -E  conftest.c >/dev/null 2>conftest.out
+configure:1845: checking for dirent.h that defines DIR
+configure:1858: gcc -c -g -O2  conftest.c 1>&5
+configure:1883: checking for opendir in -ldir
+configure:1902: gcc -o conftest -g -O2   conftest.c -ldir   1>&5
+/usr/bin/ld: cannot find -ldir
+collect2: error: ld returned 1 exit status
+configure: failed program was:
+#line 1891 "configure"
+#include "confdefs.h"
+/* Override any gcc2 internal prototype to avoid an error.  */
+/* We use char because int might match the return type of a gcc2
+    builtin and then its argument prototype would still apply.  */
+char opendir();
+
+int main() {
+opendir()
+; return 0; }
+configure:1969: checking which header file defines FD_ macros
+configure:2087: checking for strlen
+configure:2115: gcc -o conftest -g -O2   conftest.c  1>&5
+In file included from configure:2092:0:
+confdefs.h:16:0: warning: "FD_HEADER_OK" redefined
+ #define FD_HEADER_OK 1
+ 
+confdefs.h:13:0: note: this is the location of the previous definition
+ #define FD_HEADER_OK 0
+ 
+configure:2099:6: warning: conflicting types for built-in function 'strlen' [-Wbuiltin-declaration-mismatch]
+ char $ac_func();
+      ^~~~~~
+configure:2087: checking for strcpy
+configure:2115: gcc -o conftest -g -O2   conftest.c  1>&5
+In file included from configure:2092:0:
+confdefs.h:16:0: warning: "FD_HEADER_OK" redefined
+ #define FD_HEADER_OK 1
+ 
+confdefs.h:13:0: note: this is the location of the previous definition
+ #define FD_HEADER_OK 0
+ 
+configure:2099:6: warning: conflicting types for built-in function 'strcpy' [-Wbuiltin-declaration-mismatch]
+ char $ac_func();
+      ^~~~~~
+configure:2087: checking for strcat
+configure:2115: gcc -o conftest -g -O2   conftest.c  1>&5
+In file included from configure:2092:0:
+confdefs.h:16:0: warning: "FD_HEADER_OK" redefined
+ #define FD_HEADER_OK 1
+ 
+confdefs.h:13:0: note: this is the location of the previous definition
+ #define FD_HEADER_OK 0
+ 
+configure:2099:6: warning: conflicting types for built-in function 'strcat' [-Wbuiltin-declaration-mismatch]
+ char $ac_func();
+      ^~~~~~
+configure:2087: checking for strstr
+configure:2115: gcc -o conftest -g -O2   conftest.c  1>&5
+In file included from configure:2092:0:
+confdefs.h:16:0: warning: "FD_HEADER_OK" redefined
+ #define FD_HEADER_OK 1
+ 
+confdefs.h:13:0: note: this is the location of the previous definition
+ #define FD_HEADER_OK 0
+ 
+configure:2099:6: warning: conflicting types for built-in function 'strstr' [-Wbuiltin-declaration-mismatch]
+ char $ac_func();
+      ^~~~~~
+configure:2087: checking for strcmp
+configure:2115: gcc -o conftest -g -O2   conftest.c  1>&5
+In file included from configure:2092:0:
+confdefs.h:16:0: warning: "FD_HEADER_OK" redefined
+ #define FD_HEADER_OK 1
+ 
+confdefs.h:13:0: note: this is the location of the previous definition
+ #define FD_HEADER_OK 0
+ 
+configure:2099:6: warning: conflicting types for built-in function 'strcmp' [-Wbuiltin-declaration-mismatch]
+ char $ac_func();
+      ^~~~~~
+configure:2087: checking for strerror
+configure:2115: gcc -o conftest -g -O2   conftest.c  1>&5
+In file included from configure:2092:0:
+confdefs.h:16:0: warning: "FD_HEADER_OK" redefined
+ #define FD_HEADER_OK 1
+ 
+confdefs.h:13:0: note: this is the location of the previous definition
+ #define FD_HEADER_OK 0
+ 
+configure:2087: checking for strtok
+configure:2115: gcc -o conftest -g -O2   conftest.c  1>&5
+In file included from configure:2092:0:
+confdefs.h:16:0: warning: "FD_HEADER_OK" redefined
+ #define FD_HEADER_OK 1
+ 
+confdefs.h:13:0: note: this is the location of the previous definition
+ #define FD_HEADER_OK 0
+ 
+configure:2087: checking for strdup
+configure:2115: gcc -o conftest -g -O2   conftest.c  1>&5
+In file included from configure:2092:0:
+confdefs.h:16:0: warning: "FD_HEADER_OK" redefined
+ #define FD_HEADER_OK 1
+ 
+confdefs.h:13:0: note: this is the location of the previous definition
+ #define FD_HEADER_OK 0
+ 
+configure:2099:6: warning: conflicting types for built-in function 'strdup' [-Wbuiltin-declaration-mismatch]
+ char $ac_func();
+      ^~~~~~
+configure:2142: checking for strchr
+configure:2170: gcc -o conftest -g -O2   conftest.c  1>&5
+In file included from configure:2147:0:
+confdefs.h:16:0: warning: "FD_HEADER_OK" redefined
+ #define FD_HEADER_OK 1
+ 
+confdefs.h:13:0: note: this is the location of the previous definition
+ #define FD_HEADER_OK 0
+ 
+configure:2154:6: warning: conflicting types for built-in function 'strchr' [-Wbuiltin-declaration-mismatch]
+ char $ac_func();
+      ^~~~~~
+configure:2142: checking for memcpy
+configure:2170: gcc -o conftest -g -O2   conftest.c  1>&5
+In file included from configure:2147:0:
+confdefs.h:16:0: warning: "FD_HEADER_OK" redefined
+ #define FD_HEADER_OK 1
+ 
+confdefs.h:13:0: note: this is the location of the previous definition
+ #define FD_HEADER_OK 0
+ 
+configure:2154:6: warning: conflicting types for built-in function 'memcpy' [-Wbuiltin-declaration-mismatch]
+ char $ac_func();
+      ^~~~~~
+configure:2197: checking for fgets
+configure:2225: gcc -o conftest -g -O2   conftest.c  1>&5
+In file included from configure:2202:0:
+confdefs.h:16:0: warning: "FD_HEADER_OK" redefined
+ #define FD_HEADER_OK 1
+ 
+confdefs.h:13:0: note: this is the location of the previous definition
+ #define FD_HEADER_OK 0
+ 
+configure:2252: checking for yylex
+configure:2280: gcc -o conftest -g -O2   conftest.c  1>&5
+In file included from configure:2257:0:
+confdefs.h:16:0: warning: "FD_HEADER_OK" redefined
+ #define FD_HEADER_OK 1
+ 
+confdefs.h:13:0: note: this is the location of the previous definition
+ #define FD_HEADER_OK 0
+ 
+/tmp/ccidthOO.o: In function `main':
+/home/ubuntu/environment/gbdk/sdcc/configure:2274: undefined reference to `yylex'
+collect2: error: ld returned 1 exit status
+configure: failed program was:
+#line 2257 "configure"
+#include "confdefs.h"
+/* System header to define __stub macros and hopefully few prototypes,
+    which can conflict with char yylex(); below.  */
+#include <assert.h>
+/* Override any gcc2 internal prototype to avoid an error.  */
+/* We use char because int might match the return type of a gcc2
+    builtin and then its argument prototype would still apply.  */
+char yylex();
+
+int main() {
+
+/* The GNU C library defines this for functions which it implements
+    to always fail with ENOSYS.  Some functions are actually named
+    something starting with __ and the normal name is an alias.  */
+#if defined (__stub_yylex) || defined (__stub___yylex)
+choke me
+#else
+yylex();
+#endif
+
+; return 0; }
+configure:2308: checking for library containing socket
+configure:2326: gcc -o conftest -g -O2   conftest.c  1>&5
+In file included from configure:2315:0:
+confdefs.h:16:0: warning: "FD_HEADER_OK" redefined
+ #define FD_HEADER_OK 1
+ 
+confdefs.h:13:0: note: this is the location of the previous definition
+ #define FD_HEADER_OK 0
+ 
+configure:2370: checking for library containing inet_addr
+configure:2388: gcc -o conftest -g -O2   conftest.c  1>&5
+In file included from configure:2377:0:
+confdefs.h:16:0: warning: "FD_HEADER_OK" redefined
+ #define FD_HEADER_OK 1
+ 
+confdefs.h:13:0: note: this is the location of the previous definition
+ #define FD_HEADER_OK 0
+ 
+configure:2444: checking whether preprocessor accepts -MM or -M
+Using built-in specs.
+COLLECT_GCC=gcc
+OFFLOAD_TARGET_NAMES=nvptx-none
+OFFLOAD_TARGET_DEFAULT=1
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 7.4.0-1ubuntu1~18.04.1' --with-bugurl=file:///usr/share/doc/gcc-7/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++ --prefix=/usr --with-gcc-major-version-only --program-suffix=-7 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-libmpx --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+Thread model: posix
+gcc version 7.4.0 (Ubuntu 7.4.0-1ubuntu1~18.04.1) 
+COLLECT_GCC_OPTIONS='-E' '-v' '-MM' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/7/cc1 -E -quiet -v -imultiarch x86_64-linux-gnu -MM _test_.c -mtune=generic -march=x86-64 -fstack-protector-strong -Wformat -Wformat-security
+ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
+ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/7/../../../../x86_64-linux-gnu/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/lib/gcc/x86_64-linux-gnu/7/include
+ /usr/local/include
+ /usr/lib/gcc/x86_64-linux-gnu/7/include-fixed
+ /usr/include/x86_64-linux-gnu
+ /usr/include
+End of search list.
+_test_.o: _test_.c
+COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-E' '-v' '-MM' '-mtune=generic' '-march=x86-64'
+configure:2466: checking whether gcc accepts -ggdb
+Using built-in specs.
+COLLECT_GCC=gcc
+OFFLOAD_TARGET_NAMES=nvptx-none
+OFFLOAD_TARGET_DEFAULT=1
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 7.4.0-1ubuntu1~18.04.1' --with-bugurl=file:///usr/share/doc/gcc-7/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++ --prefix=/usr --with-gcc-major-version-only --program-suffix=-7 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-libmpx --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+Thread model: posix
+gcc version 7.4.0 (Ubuntu 7.4.0-1ubuntu1~18.04.1) 
+COLLECT_GCC_OPTIONS='-v' '-ggdb' '-c' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/7/cc1 -quiet -v -imultiarch x86_64-linux-gnu _test_.c -quiet -dumpbase _test_.c -mtune=generic -march=x86-64 -auxbase _test_ -ggdb -version -fstack-protector-strong -Wformat -Wformat-security -o /tmp/ccEV6Vxc.s
+GNU C11 (Ubuntu 7.4.0-1ubuntu1~18.04.1) version 7.4.0 (x86_64-linux-gnu)
+	compiled by GNU C version 7.4.0, GMP version 6.1.2, MPFR version 4.0.1, MPC version 1.1.0, isl version isl-0.19-GMP
+
+GGC heuristics: --param ggc-min-expand=97 --param ggc-min-heapsize=125951
+ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
+ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/7/../../../../x86_64-linux-gnu/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/lib/gcc/x86_64-linux-gnu/7/include
+ /usr/local/include
+ /usr/lib/gcc/x86_64-linux-gnu/7/include-fixed
+ /usr/include/x86_64-linux-gnu
+ /usr/include
+End of search list.
+GNU C11 (Ubuntu 7.4.0-1ubuntu1~18.04.1) version 7.4.0 (x86_64-linux-gnu)
+	compiled by GNU C version 7.4.0, GMP version 6.1.2, MPFR version 4.0.1, MPC version 1.1.0, isl version isl-0.19-GMP
+
+GGC heuristics: --param ggc-min-expand=97 --param ggc-min-heapsize=125951
+Compiler executable checksum: fa57db1fe2d756b22d454aa8428fd3bd
+COLLECT_GCC_OPTIONS='-v' '-ggdb' '-c' '-mtune=generic' '-march=x86-64'
+ as -v --64 -o _test_.o /tmp/ccEV6Vxc.s
+GNU assembler version 2.30 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.30
+COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-ggdb' '-c' '-mtune=generic' '-march=x86-64'
+configure:2491: checking whether gcc accepts -pipe
+Using built-in specs.
+COLLECT_GCC=gcc
+OFFLOAD_TARGET_NAMES=nvptx-none
+OFFLOAD_TARGET_DEFAULT=1
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 7.4.0-1ubuntu1~18.04.1' --with-bugurl=file:///usr/share/doc/gcc-7/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++ --prefix=/usr --with-gcc-major-version-only --program-suffix=-7 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-libmpx --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+Thread model: posix
+gcc version 7.4.0 (Ubuntu 7.4.0-1ubuntu1~18.04.1) 
+COLLECT_GCC_OPTIONS='-v' '-pipe' '-c' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/7/cc1 -quiet -v -imultiarch x86_64-linux-gnu _test_.c -quiet -dumpbase _test_.c -mtune=generic -march=x86-64 -auxbase _test_ -version -fstack-protector-strong -Wformat -Wformat-security -o - |
+ as -v --64 -o _test_.o
+GNU C11 (Ubuntu 7.4.0-1ubuntu1~18.04.1) version 7.4.0 (x86_64-linux-gnu)
+	compiled by GNU C version 7.4.0, GMP version 6.1.2, MPFR version 4.0.1, MPC version 1.1.0, isl version isl-0.19-GMP
+
+GGC heuristics: --param ggc-min-expand=97 --param ggc-min-heapsize=125951
+ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
+ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/7/../../../../x86_64-linux-gnu/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/lib/gcc/x86_64-linux-gnu/7/include
+ /usr/local/include
+ /usr/lib/gcc/x86_64-linux-gnu/7/include-fixed
+ /usr/include/x86_64-linux-gnu
+ /usr/include
+End of search list.
+GNU C11 (Ubuntu 7.4.0-1ubuntu1~18.04.1) version 7.4.0 (x86_64-linux-gnu)
+	compiled by GNU C version 7.4.0, GMP version 6.1.2, MPFR version 4.0.1, MPC version 1.1.0, isl version isl-0.19-GMP
+
+GGC heuristics: --param ggc-min-expand=97 --param ggc-min-heapsize=125951
+Compiler executable checksum: fa57db1fe2d756b22d454aa8428fd3bd
+GNU assembler version 2.30 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.30
+COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-pipe' '-c' '-mtune=generic' '-march=x86-64'
+configure:2518: checking return type of signal handlers
+configure:2540: gcc -c -ggdb -O2 -pipe  conftest.c 1>&5
+In file included from configure:2523:0:
+confdefs.h:16:0: warning: "FD_HEADER_OK" redefined
+ #define FD_HEADER_OK 1
+ 
+confdefs.h:13:0: note: this is the location of the previous definition
+ #define FD_HEADER_OK 0
+ 
